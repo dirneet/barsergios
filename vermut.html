@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante - Menú</title>
+    <title>Vermuts - Restaurante</title>
     <style>
+        /* Mismo estilo que el de desayunos */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #007BFF;
             color: white;
+            margin: 0;
+            padding: 0;
         }
 
         header {
@@ -32,7 +33,6 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
             padding-top: 30px;
             z-index: 1;
         }
@@ -53,6 +53,33 @@
         .content {
             margin-left: 220px;
             padding: 20px;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        .menu-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #0056b3;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .menu-item:hover {
+            background-color: #003366;
+        }
+
+        .menu-item span {
+            font-weight: bold;
         }
 
         @media (max-width: 768px) {
@@ -78,13 +105,13 @@
 <body>
 
     <header>
-        <h1>Bienvenidos a Nuestro Restaurante</h1>
+        <h1>Vermuts</h1>
     </header>
 
     <nav>
+        <a href="index.html">Volver al Menú</a>
         <a href="desayunos.html">Desayunos</a>
-        <a href="bocadillos.html">Bocadillo y Mini Bocadillos</a>
-        <a href="vermut.html">Vermuts</a>
+        <a href="bocadillos.html">Bocadillos</a>
         <a href="tapeo.html">Tapeo</a>
         <a href="torradas.html">Torradas</a>
         <a href="tapas.html">Tapas</a>
@@ -95,8 +122,28 @@
     </nav>
 
     <div class="content">
-        <h2>Explora nuestro delicioso menú</h2>
-        <p>Selecciona una opción en el menú para conocer nuestros platos más sabrosos y opciones especiales.</p>
+        <h3>Vermuts Especiales</h3>
+        <p>Refresca tu paladar con nuestros deliciosos vermuts. Perfectos para acompañar una tarde con amigos.</p>
+
+        <!-- Lista de productos y precios -->
+        <ul class="menu-list">
+            <li class="menu-item">
+                <span>Vermut Clásico</span>
+                <span>€3.00</span>
+            </li>
+            <li class="menu-item">
+                <span>Vermut Rojo</span>
+                <span>€3.50</span>
+            </li>
+            <li class="menu-item">
+                <span>Vermut Blanco</span>
+                <span>€3.00</span>
+            </li>
+            <li class="menu-item">
+                <span>Vermut con Naranja</span>
+                <span>€3.50</span>
+            </li>
+        </ul>
     </div>
 
 </body>
